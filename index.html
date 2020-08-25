@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>Mi primer documento HTML</TITLE>
+      <?php
+$to="mirodriguezs@academia.usbbog.edu.co";
+$suject="asunto";
+$menssage="mensaje";
+$from="mirodriguezs@academia.usbbog.edu.co";
+$headers="From:" . $from;
+$mail=mail($to,$subject,$message, $headers ,$from);
+if($mail)
+{
+echo "Email sent to ".$to
+}
+?>
+   </HEAD>
+   <BODY>
+      <P>¡Hola mundo!
+   </BODY>
+</HTML>
